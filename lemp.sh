@@ -4,7 +4,7 @@
 HTTPASSWD_DIR=/home/ubuntu
 HTTPASSWD_USER=usuario
 HTTPASSWD_PASSWD=usuario
-IP_PRIVADA_MYSQL=172.31.42.252
+IP_PRIVADA_MYSQL=172.31.36.221
 
 #Habilitamos para que se muestren los comandos
 set -x
