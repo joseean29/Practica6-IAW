@@ -10,8 +10,8 @@ IP_PRIVADA_MYSQL=172.31.36.221
 set -x
 
 #ACtualizamos los repositorios
-apt update -y
-apt upgrade -y
+#apt update -y
+#apt upgrade -y
 
 #Instalamos nginx
 apt install nginx -y
