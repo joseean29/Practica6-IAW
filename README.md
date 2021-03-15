@@ -10,7 +10,7 @@ Ten en cuenta que tendrás que modificar la configuración de MySQL Server para 
 Para realizar esta práctica puede utilizar los scripts de la práctica 3, pero tenga en cuenta que tendrá que reemplazar el uso del servidor web Apache HTTP Server por Nginx.
 
 **Arquitectura de red ideal:**
-![]()
+![](https://raw.githubusercontent.com/joseean29/Practica6-IAW/main/images/1.gif)
 
 # 1 LEMP Stack
 ## 1.1 Instalación del servidor web Nginx
@@ -35,7 +35,8 @@ sudo apt install php-mysql
 ```
 
 ## 1.3 Configuración de Nginx para comunicarse con php-fpm a través de un socket UNIX
-![]()
+![](https://raw.githubusercontent.com/joseean29/Practica6-IAW/main/images/2.png)
+
 Los sockets UNIX nos permiten realizar comunicación entre procesos, también conocida como IPC (Inter-Process Communication)), que es una función básica de los sistemas operativos que permite el intercambio de datos entre procesos de una forma eficiente. Sin embargo, los sockets TCP/IP nos permiten comunicar procesos a través de una red.
 
 Un sockets UNIX es un tipo de archivo especial, donde los procesos pueden escribir y leer datos para comunicarse.
@@ -115,7 +116,7 @@ Ahora accede desde un navegador a la URL: http://IP/info.php, donde IP será la 
 Los sockets TCP/IP nos permiten comunicar procesos que se pueden estar ejecutando en la misma máquina o en máquinas diferentes, a través de una red.
 
 ### 1.5.1 Opción 1: Nginx y php-fpm se ejecutan en la misma máquina
-![]()
+![](https://raw.githubusercontent.com/joseean29/Practica6-IAW/main/images/3.png)
 
 #### 1.5.1.1 Configuración de php-fmp
 En primer lugar hay que modificar la directiva `listen` del archivo `/etc/php/7.4/fpm/pool.d/www.conf`.
