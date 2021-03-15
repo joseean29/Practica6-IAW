@@ -10,6 +10,7 @@ Ten en cuenta que tendrás que modificar la configuración de MySQL Server para 
 Para realizar esta práctica puede utilizar los scripts de la práctica 3, pero tenga en cuenta que tendrá que reemplazar el uso del servidor web Apache HTTP Server por Nginx.
 
 **Arquitectura de red ideal:**
+
 ![](https://raw.githubusercontent.com/joseean29/Practica6-IAW/main/images/1.gif)
 
 # 1 LEMP Stack
