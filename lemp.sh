@@ -5,6 +5,9 @@ HTTPASSWD_DIR=/home/ubuntu
 HTTPASSWD_USER=usuario
 HTTPASSWD_PASSWD=usuario
 IP_PRIVADA_MYSQL=172.31.36.221
+#Contraseña aleatoria para el parámetro blowfish_secret de nuestro config.inc.php: contendra una contraseña de la a-z mayusculas o minusculas y del 0-9
+BLOWFISH=`tr -dc A-Za-z0-9 < /dev/urandom | head -c 64`
+
 
 #Habilitamos para que se muestren los comandos
 set -x
@@ -86,7 +89,7 @@ mv phpMyAdmin-5.0.4-all-languages/ /var/www/html/phpmyadmin
 cd /var/www/html/phpmyadmin
 mv config.sample.inc.php config.inc.php
 sed -i "s/localhost/$IP_PRIVADA_MYSQL/" /var/www/html/phpmyadmin/config.inc.php
-
+sed -i "s/'blowfish_secret'] = '';/'blowfish_secret'] = '$BLOWFISH';/" /var/www/html/phpmyadmin/config.inc.php
 
 #Cambiamos los permisos 
 chown www-data:www-data * -R
